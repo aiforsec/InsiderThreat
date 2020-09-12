@@ -11,7 +11,6 @@ from gensim.corpora import Dictionary
 from gensim.models.ldamulticore import LdaModel
 from multiprocessing import Pool
 from functools import partial
-import numpy as np
 
 tqdm.pandas()
 CHUNK_SIZE = 500000
@@ -322,6 +321,9 @@ if __name__ == "__main__":
     dataset_dir = Path(sys.argv[2])
     main_answers_file = answers_dir / "insiders.csv"
     output_dir = Path('./_output/')
+
+    if not os.path.isdir(output_dir):
+        os.mkdir(output_dir)
 
     most_common_pc = pre_process_logon(dataset_dir / 'logon.csv')
     print("logon processed")
