@@ -310,7 +310,6 @@ def make_lda_model():
     )
     lda_model.save((output_dir / 'lda_model.pkl').as_posix())
 
-
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage:", sys.argv[0], "[answer directory] [dataset directory]")
