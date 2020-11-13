@@ -10,8 +10,8 @@ The dataset is available at Impact Cyber Trust and can be requested [here](https
 ## How to execute code
 Order of execution:
 1. git clone https://github.com/aiforsec/InsiderThreat.git
-2. Download dataset in that folder (recommend r5.2).
-3. Download answers file in that folder.
+2. Download Insider Dataset and copy it in the code folder (we recommend r5.2).
+3. Copy answers folder into the code folder.
 4. Run code in this order
 	- python pre_process_data.py [dataset answer directory] [dataset directory]
     - get "action id" with 3 action_id_*.ipynb
